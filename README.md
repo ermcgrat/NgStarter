@@ -1,3 +1,5 @@
+# A starter Project intended to get Sass source maps and HMR working.
+
 # Ng6Starter
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.3.
