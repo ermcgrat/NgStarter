@@ -1,3 +1,10 @@
+/*
+  Changes to "global" styles like this will not be reflected in an HMR compilation.
+  We would need to refresh the browser to see the style changes.
+  This is because the sass is extracted to a source-mapped css file, and isn't picked up
+  when the javascript module is recompile/updated in main.ts
+*/
+
 h3 {
   color: cornflowerblue;
 }
