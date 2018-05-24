@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --source-map",
+    "start": "ng serve",
+    "no-hmr": "ng serve -c no-hmr",
+    "hmr-style": "ng serve -c hmr-style",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",

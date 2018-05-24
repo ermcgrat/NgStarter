@@ -67,7 +67,20 @@
               "buildOptimizer": true
             },
             "serve": {
-              "extractCss": true
+              "extractCss": true,
+              "sourceMap": true
+            },
+            "no-hmr": {
+              "fileReplacements": [{
+                "replace": "src/environments/environment.ts",
+                "with": "src/environments/environment.no-hmr.ts"
+              }],
+              "extractCss": true,
+              "sourceMap": true
+            },
+            "hmr-style": {
+              "extractCss": false,
+              "sourceMap": true
             }
           }
         },
@@ -80,6 +93,14 @@
           "configurations": {
             "production": {
               "browserTarget": "Ng6Starter:build:production"
+            },
+            "no-hmr": {
+              "browserTarget": "Ng6Starter:build:no-hmr",
+              "hmr": false
+            },
+            "hmr-style": {
+              "browserTarget": "Ng6Starter:build:hmr-style",
+              "hmr": true
             }
           }
         }
