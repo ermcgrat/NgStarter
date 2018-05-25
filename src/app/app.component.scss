@@ -2,6 +2,8 @@
 
 /* These component styles will be reflected upon successful hmr compilation (no refresh necessary) */
 
+/* It will also count towards an updated module, rebuilding the app and losing component state if not accounted for */
+
 h1 {
   color: green;
 }

@@ -1,12 +1,24 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { AppStateService, IAppState } from './app.state.service';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'app';
+  private appState$: Observable<IAppState>;
+
+  constructor(private stateService: AppStateService) {
+    console.log('App Component constructed');
+  }
+
+  ngOnInit() {
+    console.log('App Component OnInit');
+    this.appState$ = this.stateService.appState$;
+  }
 
   changeTitle() {
     // note that this modified state would be lost in an HMR recompilation

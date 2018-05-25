@@ -1,8 +1,8 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
+<div>
   <h1 (click)="changeTitle()">
-    Welcome to {{ title }}!
+    Welcome to {{ title }}
   </h1>
 </div>
-<h2>Here are some links to help you start: </h2>
+<h2>Number of hmrBuilds: {{(appState$ | async)?.hmrBuilds}} </h2>
 <h3>This is an h3</h3>

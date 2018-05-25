@@ -10,6 +10,8 @@ if (environment.production) {
   enableProdMode();
 }
 
+console.log('main.ts executed');
+
 const bootstrap = () => platformBrowserDynamic().bootstrapModule(AppModule);
 
 if (environment.hmr) {
