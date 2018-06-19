@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 })
 export class AppComponent implements OnInit {
   title = 'app';
-  private appState$: Observable<IAppState>;
+  public appState$: Observable<IAppState>;
 
   constructor(private stateService: AppStateService) {
     console.log('App Component constructed');
